@@ -1,655 +1,367 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Chandramouleeswaran | Portfolio</title>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- Icons -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <link rel="stylesheet" href="style.css">
-
-    <!-- YOLO test -->
-    <!-- Pull Shark test -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Moulish's personal portfolio showcasing education, skills and projects.">
+  <title>Moulish | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
 
-<!-- ================= NAVBAR ================= -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo">moulish<span>.</span></a>
 
-<header>
-    <nav class="navbar">
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation" aria-expanded="false">
+        ☰
+      </button>
 
-        <div class="logo">
-            M<span>.C</span>
-        </div>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-        <ul class="nav-links">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#coding">Coding</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+  <main>
+    <!-- Home -->
+    <section class="hero section" id="home">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="eyebrow">HELLO, WELCOME TO MY PORTFOLIO</p>
 
-        <div class="menu-btn">
-            <i class="fa-solid fa-bars"></i>
-        </div>
+          <h1>Hi, I'm <span>Moulish</span></h1>
 
-    </nav>
-</header>
+          <h2>AI & ML Student | Developer</h2>
 
+          <p class="hero-description">
+            I'm a third-year B.E. AIML student who enjoys building
+            practical applications, learning new technologies and
+            solving programming problems.
+          </p>
 
-<!-- ================= HOME ================= -->
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Explore My Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
 
-<section id="home" class="hero">
-
-    <div class="hero-content">
-
-        <p class="small-title">WELCOME TO MY PORTFOLIO</p>
-
-        <h1>
-            Hi, I'm <span>Chandramouleeswaran</span>
-        </h1>
-
-        <h2>
-            <span id="typing"></span>
-        </h2>
-
-        <p class="hero-text">
-            B.E. Artificial Intelligence & Machine Learning student
-            who enjoys building websites, solving problems and
-            exploring AI technologies.
-        </p>
-
-        <div class="hero-buttons">
-
-            <a href="#projects" class="btn primary">
-                View Projects
-            </a>
-
-            <a href="#contact" class="btn secondary">
-                Contact Me
-            </a>
-
-        </div>
-
-        <div class="social-icons">
-
-            <a href="https://github.com/MOULEES-CODE-IN" target="_blank">
-                <i class="fa-brands fa-github"></i>
-            </a>
-
-            <a href="https://www.linkedin.com/in/chandramouleeswaran-m-834aa439/"
-               target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
+          <div class="social-links">
+            <a href="https://github.com/MOULEES-CODE-IN"
+               target="_blank" rel="noopener noreferrer">GitHub ↗</a>
 
             <a href="https://leetcode.com/u/chandra_moulees/"
-               target="_blank">
-                <i class="fa-solid fa-code"></i>
+               target="_blank" rel="noopener noreferrer">LeetCode ↗</a>
+
+            <a href="https://www.linkedin.com/in/chandramouleeswaran-m-834aa4397/"
+               target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="profile-circle">M</div>
+          <p class="profile-label">STUDENT DEVELOPER</p>
+          <h3>Learn. Build. Improve.</h3>
+          <p>Turning ideas into practical projects.</p>
+          <div class="profile-tags">
+            <span>Java</span>
+            <span>Python</span>
+            <span>MERN</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">GET TO KNOW ME</p>
+          <h2>About <span>Me</span></h2>
+        </div>
+
+        <div class="about-card">
+          <p>
+            I'm Chandramouleeswaran M, also known as Moulish,
+            pursuing a Bachelor of Engineering in Artificial
+            Intelligence and Machine Learning at V S B College
+            of Engineering Technical Campus, Coimbatore.
+          </p>
+
+          <p>
+            I am interested in software development, web technologies,
+            AI and machine learning. I practice Java programming and
+            data structures, develop web projects, and continuously
+            improve my technical skills through hands-on learning.
+          </p>
+
+          <div class="about-facts">
+            <div>
+              <span class="fact-label">Degree</span>
+              <strong>B.E. AIML</strong>
+            </div>
+            <div>
+              <span class="fact-label">CGPA</span>
+              <strong>8.02</strong>
+            </div>
+            <div>
+              <span class="fact-label">Focus</span>
+              <strong>Software Development</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">WHAT I WORK WITH</p>
+          <h2>My <span>Skills</span></h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-icon">01</div>
+            <h3>Programming</h3>
+            <div class="tags">
+              <span>Java</span>
+              <span>Python</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon">02</div>
+            <h3>Frontend</h3>
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon">03</div>
+            <h3>Backend</h3>
+            <div class="tags">
+              <span>Node.js</span>
+              <span>Express.js</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon">04</div>
+            <h3>Database</h3>
+            <div class="tags">
+              <span>MySQL</span>
+              <span>MongoDB</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon">05</div>
+            <h3>Tools</h3>
+            <div class="tags">
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>VS Code</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon">06</div>
+            <h3>Core Interests</h3>
+            <div class="tags">
+              <span>AIML</span>
+              <span>DSA</span>
+              <span>Web Development</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">WHAT I'VE BEEN BUILDING</p>
+          <h2>My <span>Projects</span></h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-number">PROJECT 01</div>
+            <h3>Placement Management System</h3>
+            <p>
+              A MERN stack application designed to organize placement
+              activities with separate student, company and admin
+              dashboards.
+            </p>
+            <div class="tags">
+              <span>MongoDB</span>
+              <span>Express.js</span>
+              <span>React</span>
+              <span>Node.js</span>
+            </div>
+            <a class="project-link"
+               href="https://github.com/MOULEES-CODE-IN/MERN-Stack"
+               target="_blank" rel="noopener noreferrer">
+              View Repository ↗
             </a>
+          </article>
 
-        </div>
-
-    </div>
-
-
-    <!-- Right side -->
-
-    <div class="hero-card">
-
-        <div class="code-top">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <div class="code-content">
-
-<pre>
-<span class="pink">class</span> Developer {
-
-    String name =
-        <span class="green">"Chandramouleeswaran"</span>;
-
-    String role =
-        <span class="green">"Frontend Developer"</span>;
-
-    String interest =
-        <span class="green">"AI / ML"</span>;
-
-    <span class="pink">void</span> build() {
-        learn();
-        code();
-        create();
-    }
-}
-</pre>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= ABOUT ================= -->
-
-<section id="about" class="section">
-
-    <p class="section-number">01 — ABOUT</p>
-
-    <h2 class="section-title">
-        About <span>Me</span>
-    </h2>
-
-    <div class="about-container">
-
-        <div class="about-number">
-            <span>01</span>
-        </div>
-
-        <div class="about-text">
-
+          <article class="project-card">
+            <div class="project-number">PROJECT 02</div>
+            <h3>Navigo</h3>
             <p>
-                I'm <strong>Chandramouleeswaran M</strong>, a 3rd year
-                B.E. Artificial Intelligence and Machine Learning student
-                at V S B College of Engineering Technical Campus,
-                Coimbatore.
+              A map-based navigation project focused on displaying
+              locations and helping users explore routes through a
+              simple interface.
             </p>
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Leaflet</span>
+            </div>
+            <a class="project-link"
+               href="https://github.com/MOULEES-CODE-IN"
+               target="_blank" rel="noopener noreferrer">
+              Explore GitHub ↗
+            </a>
+          </article>
 
+          <article class="project-card">
+            <div class="project-number">PROJECT 03</div>
+            <h3>Credit Fraud Detection</h3>
             <p>
-                I am interested in <strong>Frontend Development,
-                Artificial Intelligence and Machine Learning</strong>.
-                I enjoy creating simple websites and learning how
-                real-world applications work.
+              A machine learning project concept focused on identifying
+              potentially fraudulent credit transactions from data.
             </p>
+            <div class="tags">
+              <span>Python</span>
+              <span>Machine Learning</span>
+              <span>Data Analysis</span>
+            </div>
+            <a class="project-link"
+               href="https://github.com/MOULEES-CODE-IN"
+               target="_blank" rel="noopener noreferrer">
+              Explore GitHub ↗
+            </a>
+          </article>
 
+          <article class="project-card">
+            <div class="project-number">PROJECT 04</div>
+            <h3>Hostel Leave Management</h3>
             <p>
-                My goal is to continuously improve my programming,
-                problem-solving and development skills by building
-                practical projects.
+              A web application concept for submitting and managing
+              hostel leave requests digitally instead of relying
+              entirely on paper forms.
             </p>
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <a class="project-link"
+               href="https://github.com/MOULEES-CODE-IN"
+               target="_blank" rel="noopener noreferrer">
+              Explore GitHub ↗
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <!-- Education -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">MY ACADEMIC BACKGROUND</p>
+          <h2>My <span>Education</span></h2>
         </div>
 
+        <div class="education-list">
+          <article class="education-card">
+            <div class="education-dot"></div>
+            <p class="eyebrow">ENGINEERING</p>
+            <h3>B.E. — Artificial Intelligence and Machine Learning</h3>
+            <p>V S B College of Engineering Technical Campus, Coimbatore</p>
+            <div class="education-meta">
+              <span>Expected graduation: 2028</span>
+              <span>CGPA: 8.02</span>
+            </div>
+          </article>
+
+          <article class="education-card">
+            <div class="education-dot"></div>
+            <p class="eyebrow">HIGHER SECONDARY</p>
+            <h3>12th Standard</h3>
+            <p>Government Boys Higher Secondary School, Thottiyam</p>
+            <div class="education-meta">
+              <span>Percentage: 71%</span>
+            </div>
+          </article>
+
+          <article class="education-card">
+            <div class="education-dot"></div>
+            <p class="eyebrow">SECONDARY</p>
+            <h3>10th Standard</h3>
+            <p>Government Boys Higher Secondary School, Thottiyam</p>
+            <div class="education-meta">
+              <span>Percentage: 59%</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <p class="eyebrow">LET'S CONNECT</p>
+          <h2>Have an opportunity or idea?</h2>
+          <p>
+            I'm interested in learning, collaborating on projects
+            and connecting with people in technology.
+          </p>
+
+          <!-- Replace with your real email address -->
+          <a class="btn btn-primary"
+             href="mailto:YOUR_EMAIL@example.com">
+            Send Me an Email ↗
+          </a>
+
+          <div class="contact-links">
+            <a href="https://github.com/MOULEES-CODE-IN"
+               target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/chandramouleeswaran-m-834aa4397/"
+               target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://leetcode.com/u/chandra_moulees/"
+               target="_blank" rel="noopener noreferrer">LeetCode</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <a href="#home" class="logo">moulish<span>.</span></a>
+      <p>Designed and built by Moulish.</p>
+      <p>© <span id="year"></span> All rights reserved.</p>
     </div>
-
-</section>
-
-
-<!-- ================= EDUCATION ================= -->
-
-<section id="education" class="section">
-
-    <p class="section-number">02 — EDUCATION</p>
-
-    <h2 class="section-title">
-        My <span>Education</span>
-    </h2>
-
-    <div class="education-list">
-
-        <div class="education-card">
-
-            <div class="year">
-                2026 —
-                <br>
-                Present
-            </div>
-
-            <div>
-                <h3>B.E. Artificial Intelligence & Machine Learning</h3>
-
-                <p>
-                    V S B College of Engineering Technical Campus
-                </p>
-
-                <small>
-                    CGPA: 8.02
-                </small>
-            </div>
-
-        </div>
-
-
-        <div class="education-card">
-
-            <div class="year">
-                2023 —
-                <br>
-                2024
-            </div>
-
-            <div>
-                <h3>Higher Secondary Education</h3>
-
-                <p>
-                    Govt Boys Higher Secondary School,
-                    Thottiyam
-                </p>
-
-                <small>
-                    Percentage: 71%
-                </small>
-            </div>
-
-        </div>
-
-
-        <div class="education-card">
-
-            <div class="year">
-                2021 —
-                <br>
-                2022
-            </div>
-
-            <div>
-                <h3>SSLC</h3>
-
-                <p>
-                    Govt Boys Higher Secondary School,
-                    Thottiyam
-                </p>
-
-                <small>
-                    Percentage: 59%
-                </small>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= SKILLS ================= -->
-
-<section id="skills" class="section">
-
-    <p class="section-number">03 — SKILLS</p>
-
-    <h2 class="section-title">
-        Technical <span>Skills</span>
-    </h2>
-
-
-    <div class="skills-grid">
-
-        <div class="skill-card">
-            <i class="fa-brands fa-java"></i>
-            <h3>Java</h3>
-            <p>Programming & OOP</p>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-brands fa-python"></i>
-            <h3>Python</h3>
-            <p>Programming & ML</p>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-brands fa-html5"></i>
-            <h3>HTML</h3>
-            <p>Web Structure</p>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-brands fa-css3-alt"></i>
-            <h3>CSS</h3>
-            <p>Web Design</p>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-brands fa-js"></i>
-            <h3>JavaScript</h3>
-            <p>Web Interaction</p>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-brands fa-node-js"></i>
-            <h3>Node.js</h3>
-            <p>Backend Development</p>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-solid fa-database"></i>
-            <h3>MySQL</h3>
-            <p>Database</p>
-        </div>
-
-        <div class="skill-card">
-            <i class="fa-brands fa-git-alt"></i>
-            <h3>Git & GitHub</h3>
-            <p>Version Control</p>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= PROJECTS ================= -->
-
-<section id="projects" class="section">
-
-    <p class="section-number">04 — PROJECTS</p>
-
-    <h2 class="section-title">
-        My <span>Projects</span>
-    </h2>
-
-
-    <div class="projects-grid">
-
-
-        <!-- Project 1 -->
-
-        <div class="project-card">
-
-            <div class="project-top">
-
-                <span class="project-number">
-                    01
-                </span>
-
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-            </div>
-
-            <h3>
-                Stock prediction model
-            </h3>
-
-            <p>
-                A machine learning based project focused on
-                analysing data and predicting suitable outcomes
-                using a prediction model.
-            </p>
-
-            <div class="tech">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-            </div>
-
-        </div>
-
-
-        <!-- Project 2 -->
-
-        <div class="project-card">
-
-            <div class="project-top">
-
-                <span class="project-number">
-                    02
-                </span>
-
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-            </div>
-
-            <h3>
-                Online leave management system
-            </h3>
-
-            <p>
-                A web-based system that allows hostel students
-                to apply for leave online instead of using
-                traditional paper-based applications.
-            </p>
-
-            <div class="tech">
-                <span>Python</span>
-                <span>Machine Learning</span>
-            </div>
-
-        </div>
-
-
-        <!-- Project 3 -->
-
-        <div class="project-card">
-
-            <div class="project-top">
-
-                <span class="project-number">
-                    03
-                </span>
-
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-            </div>
-
-            <h3>
-                Number Guessing Game
-            </h3>
-
-            <p>
-                A simple game to guess the hidden number,
-                built with HTML, CSS & JavaScript.
-            </p>
-
-            <div class="tech">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= CODING ================= -->
-
-<section id="coding" class="section">
-
-    <p class="section-number">05 — CODING</p>
-
-    <h2 class="section-title">
-        Coding <span>Profiles</span>
-    </h2>
-
-
-    <div class="coding-container">
-
-        <a href="https://github.com/MOULEES-CODE-IN"
-           target="_blank"
-           class="coding-card">
-
-            <i class="fa-brands fa-github"></i>
-
-            <div>
-                <h3>GitHub</h3>
-                <p>MOULEES-CODE-IN</p>
-            </div>
-
-            <i class="fa-solid fa-arrow-right"></i>
-
-        </a>
-
-
-        <a href="https://leetcode.com/u/chandra_moulees/"
-           target="_blank"
-           class="coding-card">
-
-            <i class="fa-solid fa-code"></i>
-
-            <div>
-                <h3>LeetCode</h3>
-                <p>chandra_moulees</p>
-            </div>
-
-            <i class="fa-solid fa-arrow-right"></i>
-
-        </a>
-
-
-        <a href="https://www.linkedin.com/in/chandramouleeswaran-m-834aa439/"
-           target="_blank"
-           class="coding-card">
-
-            <i class="fa-brands fa-linkedin"></i>
-
-            <div>
-                <h3>LinkedIn</h3>
-                <p>Chandramouleeswaran M</p>
-            </div>
-
-            <i class="fa-solid fa-arrow-right"></i>
-
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- ================= GOALS ================= -->
-
-<section id="goals" class="section">
-
-    <p class="section-number">06 — GOALS</p>
-
-    <h2 class="section-title">
-        My <span>Goals</span>
-    </h2>
-
-
-    <div class="goals-grid">
-
-        <div class="goal-card">
-
-            <span>01</span>
-
-            <h3>Short Term Goal</h3>
-
-            <p>
-                Become a job-ready Frontend Developer
-                by improving my frontend, backend,
-                database and problem-solving skills.
-            </p>
-
-        </div>
-
-
-        <div class="goal-card">
-
-            <span>02</span>
-
-            <h3>Long Term Goal</h3>
-
-            <p>
-                Build a career in Artificial Intelligence
-                and Machine Learning and create useful
-                real-world intelligent applications.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= CONTACT ================= -->
-
-<section id="contact" class="section contact-section">
-
-    <p class="section-number">07 — CONTACT</p>
-
-    <h2 class="section-title">
-        Let's <span>Connect</span>
-    </h2>
-
-    <p class="contact-text">
-        Have an idea, project or opportunity?
-        Feel free to reach out.
-    </p>
-
-
-    <div class="contact-grid">
-
-        <a href="mailto:chandramoulish555@gmail.com"
-           class="contact-card">
-
-            <i class="fa-solid fa-envelope"></i>
-
-            <div>
-                <small>Email</small>
-                <p>chandramoulish555@gmail.com</p>
-            </div>
-
-        </a>
-
-
-        <a href="tel:+918946006420"
-           class="contact-card">
-
-            <i class="fa-solid fa-phone"></i>
-
-            <div>
-                <small>Phone</small>
-                <p>+91 8946006420</p>
-            </div>
-
-        </a>
-
-
-        <a href="https://www.linkedin.com/in/chandramouleeswaran-m-834aa439/"
-           target="_blank"
-           class="contact-card">
-
-            <i class="fa-brands fa-linkedin"></i>
-
-            <div>
-                <small>LinkedIn</small>
-                <p>Connect with me</p>
-            </div>
-
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-    <div class="footer-logo">
-        M<span>.C</span>
-    </div>
-
-    <p>
-        Designed & Built by
-        <strong>Chandramouleeswaran M</strong>
-    </p>
-
-    <p class="copyright">
-        © 2026 All Rights Reserved.
-    </p>
-
-</footer>
-
-
-<script src="script.js"></script>
+  </footer>
 
 </body>
 </html>

@@ -1,179 +1,29 @@
-/* =========================
-   TYPING EFFECT
-========================= */
 
-const typing = document.getElementById("typing");
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
 
-const words = [
-    "Frontend Developer",
-    "Machine Learning Enthusiast",
-    "AI Explorer"
-];
+// Mobile navigation
+menuToggle.addEventListener("click", () => {
+  const isOpen = navLinks.classList.toggle("open");
 
-let wordIndex = 0;
-let charIndex = 0;
-let deleting = false;
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  menuToggle.setAttribute(
+    "aria-label",
+    isOpen ? "Close navigation" : "Open navigation"
+  );
 
-
-function typeEffect() {
-
-    const currentWord = words[wordIndex];
-
-    if (!deleting) {
-
-        typing.textContent =
-            currentWord.substring(0, charIndex + 1);
-
-        charIndex++;
-
-        if (charIndex === currentWord.length) {
-
-            deleting = true;
-
-            setTimeout(typeEffect, 1400);
-
-            return;
-        }
-
-    } else {
-
-        typing.textContent =
-            currentWord.substring(0, charIndex - 1);
-
-        charIndex--;
-
-        if (charIndex === 0) {
-
-            deleting = false;
-
-            wordIndex++;
-
-            if (wordIndex === words.length) {
-                wordIndex = 0;
-            }
-
-        }
-    }
-
-    setTimeout(
-        typeEffect,
-        deleting ? 45 : 80
-    );
-}
-
-typeEffect();
-
-
-/* =========================
-   SCROLL REVEAL
-========================= */
-
-const animatedElements =
-    document.querySelectorAll(
-        ".section, .hero-content, .hero-card"
-    );
-
-
-const observer = new IntersectionObserver(
-
-    (entries) => {
-
-        entries.forEach(entry => {
-
-            if (entry.isIntersecting) {
-
-                entry.target.classList.add("show");
-
-            }
-
-        });
-
-    },
-
-    {
-        threshold: 0.12
-    }
-
-);
-
-
-animatedElements.forEach(element => {
-    observer.observe(element);
+  menuToggle.textContent = isOpen ? "✕" : "☰";
 });
 
-
-/* =========================
-   MOBILE MENU
-========================= */
-
-const menuBtn =
-    document.querySelector(".menu-btn");
-
-const navLinks =
-    document.querySelector(".nav-links");
-
-
-menuBtn.addEventListener("click", () => {
-
-    navLinks.classList.toggle("show-menu");
-
+// Close menu after selecting a section
+navLinks.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute("aria-label", "Open navigation");
+    menuToggle.textContent = "☰";
+  });
 });
 
-
-/* Close mobile menu after clicking */
-
-document.querySelectorAll(".nav-links a")
-.forEach(link => {
-
-    link.addEventListener("click", () => {
-
-        navLinks.classList.remove("show-menu");
-
-    });
-
-});
-
-
-/* =========================
-   ACTIVE NAVIGATION
-========================= */
-
-const sections =
-    document.querySelectorAll("section");
-
-const links =
-    document.querySelectorAll(".nav-links a");
-
-
-window.addEventListener("scroll", () => {
-
-    let current = "";
-
-    sections.forEach(section => {
-
-        const sectionTop =
-            section.offsetTop - 150;
-
-        if (scrollY >= sectionTop) {
-            current = section.getAttribute("id");
-        }
-
-    });
-
-
-    links.forEach(link => {
-
-        link.classList.remove("active");
-
-        if (
-            link.getAttribute("href") ===
-            "#" + current
-        ) {
-
-            link.classList.add("active");
-
-        }
-
-    });
-
-});
+// Automatically update copyright year
+document.getElementById("year").textContent = new Date().getFullYear();
